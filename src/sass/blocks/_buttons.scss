@@ -1,0 +1,18 @@
+.btn {
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+    &_me {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,110 @@
+.hamburger {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    //transform: translateY(-50%);
+    width: 36px;
+    cursor: pointer;
+    &__line {   
+        display: block;
+        height: 3px;
+        width: 80%;
+        background-color: #151812;
+        transition: 0.5s all;
+        &:nth-child(2) {
+            width: 100%;
+        }
+    }
+    
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 100%;
+    }
+    &__block {
+        position: relative;
+        background-color: $main-color;
+        padding-top: 140px;
+        padding-left: 40px;
+        width: 345px;
+        height: 100%;
+        transition: all .6s;
+        z-index: 10;
+    }
+    &__close {
+        position: absolute; 
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+        cursor: pointer;
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #000000;
+            border-radius: 100%;
+            left: -33px;
+            top: 10px;
+            transition: all .6s;
+        }
+        &:hover {
+            &:before {
+                background-color: #000000;
+            }
+        }
+    }
+    &__social {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.75;
+    }
+}
+    
