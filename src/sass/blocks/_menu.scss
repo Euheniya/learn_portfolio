@@ -79,11 +79,11 @@
             left: -33px;
             top: 10px;
             transition: all .6s;
-        }
+            }
         &:hover {
             &:before {
-                background-color: #000000;
-            }
+                background-color: black;
+            } 
         }
     }
     &__social {
@@ -96,6 +96,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a {
+            &:hover {
+                svg path {
+                    fill: white;
+                }
+            }
+        }
     }
     &__overlay {
         position: fixed;
