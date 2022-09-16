@@ -1,0 +1,102 @@
+.resume {
+    &__content {
+        margin: 60px 90px 60px 65px;
+    }
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__devider {
+        @include devider;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        margin-top: 60px;
+       
+    }
+    &__column {
+        
+        &-title {
+            position: relative;
+            padding-left: 43px;
+            @include before_circle-min;
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+                left: -7px;
+            }
+        }
+       
+    }
+   
+    &__item {
+        position: relative;
+        padding-top: 45px;
+        &:after {
+            content: '';
+            width: 1px;
+            height: calc(100% + 16px);
+            position: absolute;
+            top: -16px;
+            left: 0;
+            background-color: black;
+        }
+        li {
+            list-style: none;
+        }
+    }
+
+    &__head {
+        position: relative;
+            &:after {
+                content: '';
+                width: 43px;
+                height: 1px;
+                position: absolute;
+                background-color: black;
+                top: 18px;
+        }
+        padding-left: 43px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        column-gap: 20px;
+    }
+
+    &__subheader {
+        margin-bottom: 12px;
+        &-head {
+            padding: 0 0 0 100px;
+        }
+    }
+
+    &__text {
+        padding-left: 43px;
+    }
+
+    &__img {
+        position: relative;
+        top: 14px;
+        left: 18px;
+        &-circle {
+            position: relative;
+            @include before_circle;
+            &:before {
+                top: -14px;
+                left: -18px;
+            }
+        }
+    }
+
+}
