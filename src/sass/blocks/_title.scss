@@ -20,5 +20,21 @@
     &_fz48 {
         font-size: 48px;
     }
-    
+    &__section-subtitle {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__section-devider {
+        @include devider;
+        margin: 0 auto;
+    }
 }

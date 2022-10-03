@@ -11,3 +11,9 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const counters = document.querySelectorAll('.skills__descr'),
+      lines = document.querySelectorAll('.skills__line-orange');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+})
