@@ -178,7 +178,7 @@
             <div class="resume__content">
                 <h2 class="title title_fz16 title__section-subtitle">Опыт</h2>
             <div class="title title__section-title">Чем я буду полезна</div>
-            <div class="devider resume__devider"></div>
+            <div class="devider title__section-devider"></div>
             <div class="resume__wrapper">
                 <div class="resume__column">
                     <h3 class="title title_fz20 resume__column-title">Образование</h3>
@@ -258,7 +258,7 @@
         <div class="container">
             <h2 class="title title_fz16 title__section-subtitle">Навыки</h2>
             <div class="title title__section-title">Что я использую в работе</div>
-            <div class="devider skills__devider"></div>
+            <div class="devider title__section-devider"></div>
             <div class="skills__content">
                 <div class="skills__item">
                     <img src="icons/skills/html5.svg" alt="html5" class="skills__img">
@@ -353,7 +353,7 @@
         <div class="container">
             <h2 class="title title_fz16 title__section-subtitle">Портфолио</h2>
             <div class="title title__section-title">Мои работы</div>
-            <div class="devider portfolio__devider"></div>
+            <div class="devider title__section-devider"></div>
             <div class="portfolio__wrapper">
                 <a href="https://euheniya.github.io/uber.github.io/src/" class="portfolio__item">
                     <img src="img/portfolio/uber.jpg" alt="uber">
@@ -375,6 +375,113 @@
                 </a>
             </div>
         </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-subtitle">Прайс-лист</h2>
+            <div class="devider title__section-devider price-devider"></div>
+            <div class="price__wrapper">
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Landing-page</div>
+                        <div class="price__value">от 8000 руб.</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Одностраничный сайт для презентации услуг/товаров/...</div>
+                </div>
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Web-приложение</div>
+                        <div class="price__value">от 28000 руб.</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Приложение внутри браузера для лучшего комфорта</div>
+                    
+                </div>
+                
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Корпоративный сайт</div>
+                        <div class="price__value">от 20000 руб.</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Сайт для вашего бизнеса или компании</div>
+                </div>
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Android/IOS Приложение</div>
+                        <div class="price__value">от 25000 руб.</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Приложение для смартфона любой ОС</div>
+                </div>
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Интернет-магазин</div>
+                        <div class="price__value">от 30000 руб.</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Инструмент для ваших продаж в сети</div>
+                </div>
+                <div class="price__items">
+                    <div class="title title_fz14 price__item">
+                        <div class="price__title">Дизайн</div>
+                        <div class="price__value">Индивидуально</div>
+                    </div>
+                    <div class="descr price__descr descr_fz12">Создам дизайн для вашего сайта/приложения...</div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/Photo.jpg" alt="Photo">
+                </div>
+                <div class="contacts__descr">
+                <h2 class="title title_fz16  contacts__subtitle">Контакты</h2>
+                    <div class="title contacts__title">Свяжись со мной</div>
+                    <div class="devider"></div>
+                    <div class="title title_fz14 contacts-fz14">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
+                        
+                            <a href="#" class="sidepanel__link contacts__social-link">
+                                <img src="icons/contacts/Facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="sidepanel__link contacts__social-link">
+                                <img src="icons/contacts/Telegram.svg" alt="Telegram">
+                            </a>
+                            <a href="#" class="sidepanel__link contacts__social-link">
+                                <img src="icons/contacts/Instagram.svg" alt="Instagram">
+                            </a>
+                            
+                    </div>
+                    <div class="title title_fz14 contacts-fz14">Или оставьте ваши данные и я сама вам напишу:</div>
+
+                    <form action="#" class="contacts__form">
+                        
+                            <div class="contacts__input">
+                                <input required class="title_fz12" name="name" id="name" type="text">
+                                <label for="name">Ваше имя</label>
+                            </div>
+                            <div class="contacts__input">
+                                <input required class="title_fz12" name="email" id="email" type="email">
+                                <label for="email">Ваша почта</label>
+                            </div>
+                        
+                        <div class="contacts__textarea">
+                            <textarea class="title_fz12 title_fz12-textarea" name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                        <button class="contacts__btn btn">Отправить сообщение</button>
+                        <div class="contacts__policy title_fz12">
+                            <input required type="checkbox">
+                        <span>Я согласен(а) с <a href="/policy.html" class="contacts__policy-link"> политикой конфиденциальности</a></span>
+                        </div>
+                    </div>
+                    </form>
+
+                    
+                </div>
+            </div>
     </section>
 
     <script src="js/script.js"></script>
