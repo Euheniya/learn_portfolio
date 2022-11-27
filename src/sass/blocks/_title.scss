@@ -2,7 +2,12 @@
     font-weight: 700;
     line-height: 60px;
     color: #000000;
-    font-size: 36px;
+    //font-size: 36px;
+    &_fz12 {
+        font-weight: 500;
+        font-size: 12px;
+        padding: 0 20px;
+    }
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
@@ -16,16 +21,15 @@
         font-size: 20px;
         line-height: 30px;
     }
-    
+    &_fz36 {
+        font-size: 36px;
+       
+    }
     &_fz48 {
         font-size: 48px;
     }
 
-    &_fz12 {
-        font-weight: 500;
-        font-size: 12px;
-        padding: 0 20px;
-    }
+    
     &__section-subtitle {
         position: relative;
         text-align: center;

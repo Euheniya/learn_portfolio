@@ -1,0 +1,148 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1170px;
+    }
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .grid-container {
+        grid-template: minmax(245px,auto) minmax(255px,auto)/380px 530px;
+        column-gap: 40px;
+    }
+    .aboutMe {
+        //padding-top: 100px;
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+        }
+        &__items {
+            grid-template-columns: 40px 195px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        
+    }
+    .grid-container {
+        grid-template: minmax(245px,auto) minmax(255px,auto)/300px 380px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .aboutMe {
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px,auto);
+        }
+        &__items {
+            grid-template-columns: 45px 315px;
+        }
+    }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+        &_fz36 {
+            font-size: 36px;
+        }
+    }
+    .grid-container {
+        grid-template: 400px auto auto / 100%;
+    }
+    .aboutMe {
+        padding-top: 40px;
+        
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2,260px);
+            gap: 20px;
+        }
+        &__items {
+            grid-template-columns: 40px 200px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+    }
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .menu  {
+        &__block {
+            width: 250px;
+            padding-top: 130px;
+            padding-left: 20px;
+        }
+        
+    }
+
+    .promo {
+        background: url('../img/Background.jpg') no-repeat 57%/cover;
+        &__btns {
+            margin-top: 35px;
+        }
+    }
+
+    .title {
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    .grid-container {
+        grid-template: 340px auto auto / 100%;
+        gap: 20px;
+    }
+    .aboutMe {
+        &__skills {
+            grid-template-columns: 1fr;
+            grid-auto-rows: minmax(115px,auto);
+        }
+        &__subtitle {
+            padding-bottom: 14px;
+        }
+    }
+}
+}
+    
